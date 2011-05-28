@@ -41,7 +41,7 @@
   	"fields": {
   		"name" : "You Forker",
   		"points" : 10,
-  		"description" : "Having at least one of our repositories a fork of another"
+  		"description" : "Having at least one of your repositories as a fork of another"
   	}
   },
     {

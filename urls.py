@@ -27,12 +27,11 @@ urlpatterns = patterns('',
      url(r'^home/$', home , name='home'),
      url(r'^about/$', home , name='about'),
      (r'^oauth/callback/', callback),
-     url(r'^(?P<username>\w+)/$', usernameview),
-
      #(r'^accounts/', include('registration.backends.default.urls')),
      # Uncomment the next line to enable the admin:
      (r'^admin/doc/', include('django.contrib.admindocs.urls')),
      (r'^admin/', include(admin.site.urls)),
+     url(r'^(?P<username>\w+)/$', usernameview),
      
 )
 

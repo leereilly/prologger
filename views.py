@@ -96,6 +96,16 @@ def groups(request):
     """
     return render(request,'groups.html')
 
+def usernameview(request, username=None):
+    user = User.objects.get(username=username)
+    prologger_user = ProloggerUser.objects.get(user=user)
+    achievements =  prologger_user.achievements.all()
+    print achievements
+    data = {}
+    data.update({'user': prologger_user.user})
+    data.update({'achievements': achievements})
+    return render(request,'achievements.html', data)
+
 def achievements(request):
     """
     This page is mostly here for testing may not exist in the future. ajax page for the achievements
@@ -120,7 +130,7 @@ def analyze_achievements(request):
     ach = AchievementsAnalytics(oauthtoken, prologger_user)
     achi = ach.get_achievements()
     html = "<html><body>The current user is  %s, prologger_user is : %s.</body><p>%s</p></html>" % (user, prologger_user , achi)
-    return HttpResponseRedirect('/achievements/')
+    return HttpResponseRedirect('/%s/' % (user.username))
 
 def json_achievements(request):
 

@@ -261,7 +261,7 @@ class AchievementsAnalytics(object):
         private_gist  = {'public_gist': False}
         user = self.client.users.show(self.username)
         gist = user.private_gist_count
-        if (gist>0):
+        if (gist>1):
             private_gist = {'private_gist': True}
             prolog = self.prologger_user
             prolog.add_achievement('Love Letter')

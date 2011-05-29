@@ -77,7 +77,7 @@
   	"fields": {
   		"name" : "Get That Pandemic",
   		"points" : 10,
-  		"description" : "Have at least on repository that you can push to directly"
+  		"description" : "Have at least one repository that you can push to directly"
   	}
   },
     {

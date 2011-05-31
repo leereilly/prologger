@@ -691,5 +691,59 @@
       "points" : 10,
       "description" : "One of your repositories has R as the dominant language"
     }
+  },
+  {
+    "model" : "achievements.achievement",
+    "pk": 79,
+    "fields": {
+      "name" : "N00B SAUC3!",
+      "points" : 10,
+      "description" : "You don't have any followers, repositories, gists and you're not following anyone"
+    }
+  },
+  {
+    "model" : "achievements.achievement",
+    "pk": 80,
+    "fields": {
+      "name" : "Forever alone",
+      "points" : 10,
+      "description" : "Nobody's following you"
+    }
+  },
+  {
+    "model" : "achievements.achievement",
+    "pk": 81,
+    "fields": {
+      "name" : "Yo dawg!",
+      "points" : 10,
+      "description" : "Somebody's forked your fork"
+    }
+  },
+  {
+    "model" : "achievements.achievement",
+    "pk": 82,
+    "fields": {
+      "name" : "Javascript Junkie",
+      "points" : 100,
+      "description" : "You've contributed to jquery, jquery-ui, jquery-mobile, and/or scriptacolous"
+    }
+  },
+  {
+    "model" : "achievements.achievement",
+    "pk": 83,
+    "fields": {
+      "name" : "Rails Commitment",
+      "points" : 100,
+      "description" : "You've contributed to the Rails repository"
+    }
+  },
+  {
+    "model" : "achievements.achievement",
+    "pk": 84,
+    "fields": {
+      "name" : "Django Commitment",
+      "points" : 100,
+      "description" : "You've contributed to the Django repository"
+    }
   }
 ]
